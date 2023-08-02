@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+/* Réinitialisation des marges et des paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, label, input, textarea, form, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style global pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Style pour le header */
+header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          padding: 10px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+        }
+
+        .logo img {
+          margin-right: 10px;
+        }
+
+        nav ul {
+          display: flex;
+          list-style: none;
+        }
+
+        nav li {
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        nav a:hover {
+          color: #007bff;
+        }
+
+        /* Style pour les sections */
+        section {
+            padding: 20px;
+        }
+
+        /* Style pour les titres h2 */
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Style pour les cartes de partenaires */
+
+        .Partainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .partner-card {
+            flex-basis: calc(20% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .partner-card img {
+            width: 120px;
+            height: 130px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .partner-card h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .partner-card p {
+            margin-bottom: 10px;
+        }
+
+        .partner-card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #7b8b9c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .partner-card a:hover {
+            background-color: #4791e1;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .partner-card {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+
+
+
+
+        /* Style pour les avantages des partenariats */
+        .benefits {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits li {
+            margin-bottom: 10px;
+        }
+
+        /* Style pour le formulaire de partenariat */
+        h1.formulaire {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #d8dadc;
+            color: #fff;
+        }
+
+        footer form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer label {
+            flex-basis: 100%;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        footer input[type="text"],
+        footer input[type="email"],
+        footer input[type="url"],
+        footer input[type="tel"],
+        footer textarea {
+            flex-basis: calc(50% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        footer textarea {
+            flex-basis: 100%;
+        }
+
+        footer input[type="submit"] {
+            flex-basis: 100%;
+            padding: 10px;
+            background-color: #fff;
+            color: #007BFF;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        footer input[type="submit"]:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Style pour le paragraphe "Contactez-nous" */
+        footer p {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="./IMG/logoequity.png" alt="Logo de l'entreprise" style="height: 50px; width: 50px;">
+  
+            <!-- Vous pouvez ajouter du texte supplémentaire ici -->
+            <h1>Equity Banque</h1>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li><a href="apropos.html">Apropos</a></li>
+            <li><a href="partenaire.html">Nos partenaires</a></li>
+            <li><a href="alboum.html">Alboum</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <section>
+            <h2>Nos partenaires</h2>
+            <div class="Partainer">
+                <div class="partner-card">
+                    <img src=".//IMG/makuta.png" alt="Logo partenaire 1" class="partner-logo" width="120" height="100">
+                    <h3>Tous les copec de la ville de Goma</h3>
+                    <p>Description du partenaire et ses avantages.</p>
+                    <a href="https://www.partenairesite1.com">Visiter le site</a>
+                </div>
+                <div class="partner-card">
+                    <img src="./IMG/okako_kabemba_esther.jpg" alt="Logo partenaire 2" class="partner-logo" width="120" height="100">
+                    <h3>La beauté Africaine</h3>
+                    <p>Description du partenaire et ses avantages.</p>
+                    <a href="https://www.partenairesite2.com">Visiter le site</a>
+                </div>
+                <div class="partner-card">
+                    <img src="./IMG/fils.jpg" alt="Logo partenaire 2" class="partner-logo" width="120" height="100">
+                    <h3>Alimentation Prince Madjid</h3>
+                    <p>Description du partenaire et ses avantages.</p>
+                    <a href="https://www.partenairesite2.com">Visiter le site</a>
+                </div>
+                <div class="partner-card">
+                    <img src="./IMG/mwanga_wanjo_antoinette.jpg" alt="Logo partenaire 2" class="partner-logo" width="120" height="100">
+                    <h3>Mlimo kwetu</h3>
+                    <p>Description du partenaire et ses avantages.</p>
+                    <a href="https://www.partenairesite2.com">Visiter le site</a>
+                </div>
+            </div>
+        </section>
+            <h1>L'importance du partenariat avec une banque</h1>
+                <p>Le partenariat avec une banque est important pour diverses raisons. Il permet notamment d'accéder à des 
+                    services financiers tels que des comptes bancaires, des prêts, des solutions de paiement, et des cartes de crédit.
+                    De plus, cela peut faciliter les transactions commerciales, améliorer la gestion de la trésorerie, et renforcer la 
+                    crédibilité de l'entreprise aux yeux des clients et des fournisseurs. Un partenariat avec une banque 
+                    solide peut également offrir un soutien financier, des conseils et des ressources pour favoriser la croissance et 
+                    la stabilité de l'entreprise. <br>
+
+                    Le partenariat avec une banque est d'une importance cruciale pour les entreprises. En s'associant à une banque, 
+                    elles ont accès à une gamme complète de services financiers, tels que des comptes bancaires, des prêts, des solutions 
+                    de paiement et des cartes de crédit. Cela facilite grandement les transactions commerciales et permet une gestion plus 
+                    efficace de la trésorerie. <br>
+
+                    En outre, le partenariat avec une banque renforce la crédibilité de l'entreprise auprès des clients et des fournisseurs, 
+                    ce qui peut conduire à une augmentation de la confiance et des opportunités d'affaires. Les clients ont tendance à faire 
+                    davantage confiance aux entreprises qui ont des liens avec des institutions financières respectées. <br>
+
+                    De plus, une banque solide peut offrir un soutien financier essentiel pour la croissance de l'entreprise, 
+                    en proposant des solutions de financement adaptées aux besoins spécifiques. Elle peut également fournir des 
+                    conseils stratégiques, des analyses financières et des ressources pour aider l'entreprise à prospérer. <br>
+
+                    En somme, le partenariat avec une banque est un pilier essentiel pour le succès et la stabilité financière 
+                    d'une entreprise, tout en lui permettant de bénéficier de l'expertise et du réseau de cette institution financière.
+                </p>
+        <section>
+            <h2>Avantages des partenariats</h2>
+            <div class="benefits">
+                <ul>
+                    <li>Visibilité sur notre site web</li>
+                    <li>Participation à des événements exclusifs</li>
+                    <li>Promotions spéciales pour nos partenaires</li>
+                    <li>Accès à des ressources exclusives</li>
+                    <li>Opportunités de collaboration</li>
+                    <li>Et bien plus encore...</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <h1 class="fomulaire">Formulaire de partenariat bancaire</h1>
+    <p>Merci de remplir le formulaire ci-dessous pour soumettre votre demande de partenariat.</p>
+
+    <footer>
+        <form action="/traitement_formulaire" method="post">
+            <label for="nom_entreprise">Nom de l'entreprise :</label>
+            <input type="text" id="nom_entreprise" name="nom_entreprise" required><br><br>
+    
+            <label for="adresse_entreprise">Adresse de l'entreprise :</label>
+            <input type="text" id="adresse_entreprise" name="adresse_entreprise" required><br>
+    
+            <label for="site_web">Site web :</label>
+            <input type="url" id="site_web" name="site_web"><br>
+    
+            <label for="nom_contact">Nom du contact :</label>
+            <input type="text" id="nom_contact" name="nom_contact" required><br>
+    
+            <label for="email_contact">Email du contact :</label>
+            <input type="email" id="email_contact" name="email_contact" required><br>
+    
+            <label for="telephone_contact">Téléphone du contact :</label>
+            <input type="tel" id="telephone_contact" name="telephone_contact" required><br>
+    
+            <label for="description_entreprise">Description de l'entreprise :</label><br>
+            <textarea id="description_entreprise" name="description_entreprise" rows="4" cols="50" required></textarea><br>
+    
+            <label for="motivation_partenariat">Motivation pour le partenariat :</label><br>
+            <textarea id="motivation_partenariat" name="motivation_partenariat" rows="4" cols="50" required></textarea><br>
+    
+            <input type="submit" value="Envoyer la demande">
+        </form>
+        <p>Contactez-nous : contact@monsite.com</p>
+    </footer>
+
+</body>
+</html>
