@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+          header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          padding: 8px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+        }
+
+        .logo img {
+          margin-right: 10px;
+        }
+
+        nav ul {
+          display: flex;
+          list-style: none;
+        }
+
+        nav li {
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        nav a:hover {
+          color: #007bff;
+        }
+        /* Styles for the contenue section */
+      .contenue {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .text-overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      h1{
+          text-transform: uppercase;
+          text-align: center;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./IMG/logoequity.png" alt="Logo de l'entreprise" style="height: 50px; width: 50px;">
+  
+            <!-- Vous pouvez ajouter du texte supplémentaire ici -->
+            <h1>Equity Banque</h1>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li><a href="apropos.html">Apropos</a></li>
+            <li><a href="partenaire.html">Nos partenaires</a></li>
+            <li><a href="alboum.html">Alboum</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1>participants à la réalisations</h1>
+
+   <div class="contenue">
+    <div class="container">
+        <img src="./IMG/fils.jpg" alt="fiston madjaliwa" width="300" height="350">
+        <div class="text-overlay">RAMAZANI BIN MADJALIWA Fiston</div>
+    </div>
+
+    <div class="container">
+        <img src="./IMG/mwanga_wanjo_antoinette.jpg" alt="MWANGA WANJO Antoinette" width="300" height="350">
+        <div class="text-overlay">MWANGA WANJO Antoinette</div>
+    </div>
+
+    <div class="container">
+        <img src="./IMG/mwavita_gatabazi_claudine.jpg" alt="MWAVITA GATABAZI Claudine" width="300" height="350">
+        <div class="text-overlay">MWAVITA GATABAZI Claudine</div>
+    </div>
+
+     <div class="container">
+        <img src="./IMG/nabintu_tussi_love.jpg" alt="NABINTU TUSSI Love" width="300" height="350">
+        <div class="text-overlay">NABINTU TUSSI Love</div>
+    </div>
+    
+    <div class="container">
+        <img src="./IMG/ndaane_mutaka_chris.jpg" alt="NDAANE MUTAKA Chris" width="300" height="350">
+        <div class="text-overlay">NDAANE MUTAKA Chris</div>
+    </div>
+
+    <div class="container">
+        <img src="./IMG/ndoole_masirika_victorine.jpg" alt="ndoole_masirika_victorine" width="300" height="350">
+        <div class="text-overlay">NDOOLE MASIRIKA Victorine</div>
+    </div>
+
+    <div class="container">
+        <img src="./IMG/okako_kabemba_esther.jpg" alt="okako_kabemba_esther" width="300" height="350">
+        <div class="text-overlay">OKAKO KABEMBA Esther</div>
+    </div>
+
+    <div class="container">
+        <img src="./IMG/opua_awuziku_jean.jpg" alt="opua_awuziku_jean" width="300" height="350">
+        <div class="text-overlay">OPUA AWIZUKU Jean</div>
+    </div>
+        
+    <div class="container">
+        <img src="./IMG/oyinga_kitesa_abdoul.jpg" alt="oyinga_kitesa_abdoul" width="300" height="350">
+        <div class="text-overlay">OYINGA KITESA Abdoul</div>
+    </div>
+        
+    <div class="container">
+        <img src="./IMG/paluku_malik_jeremie.jpg" alt="paluku_malik_jeremie" width="300" height="350">
+        <div class="text-overlay">PALUKU MALIK Jérémie</div>
+    </div>
+   </div>
+</body>
+</html>
