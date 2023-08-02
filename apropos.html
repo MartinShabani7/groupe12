@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+          header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #fff;
+          padding: 8px;
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+        }
+
+        .logo img {
+          margin-right: 10px;
+        }
+
+        nav ul {
+          display: flex;
+          list-style: none;
+        }
+
+        nav li {
+          margin-right: 20px;
+        }
+
+        nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+        nav a:hover {
+          color: #007bff;
+        }
+        /* Réinitialisation des marges et des paddings */
+        body, h1, h2, h3, h4, h5, h6, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style global pour le corps de la page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        /* Style de l'en-tête h1 */
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        /* Style de l'en-tête h1 en italique */
+        h1 em {
+            font-style: italic;
+        }
+
+        /* Style des paragraphes */
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Style de la section d'accueil */
+        .welcome-section {
+            padding: 40px;
+        }
+
+        /* Style de la section des membres */
+        .members-section {
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        /* Style du conteneur des membres */
+        .members-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        /* Style des conteneurs d'image */
+        .container {
+            position: relative;
+            flex: 1 1 20rem;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        /* Style des images des membres */
+        .container img {
+            width: 100%;
+            height: 20rem;
+            border-radius: 10px;
+            object-fit: contain;
+            margin: 10px;
+        }
+
+        /* Style des superpositions de texte sur les images */
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Style du pied de page */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Style du lien au survol de la souris */
+        footer a:hover {
+            border-bottom: 1px solid transparent;
+        }
+
+    </style>
+</head>
+<body class="bodyimg">
+    <header>
+        <div class="logo">
+          <img src="./IMG/logoequity.png" alt="Logo de l'entreprise" style="height: 50px; width: 50px;">
+
+            <h1>Equity Banque</h1>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li><a href="apropos.html">Apropos</a></li>
+            <li><a href="partenaire.html">Nos partenaires</a></li>
+            <li><a href="alboum.html">Alboum</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+          </ul>
+        </nav>
+      </header>
+    <!-- Section d'accueil -->
+    <section class="welcome-section">
+        <h2>Nous sommes le groupe 12 pour le compte de Travail Pratique du cours de Web1</h2><br>
+        <article>
+            <h2><em>L'importance des travaux pratiques pour ce cours de Web1</em></h2>
+            <p class="description">
+                Les travaux pratiques dans le cours de Web1 offrent de nombreux avantages aux étudiants en bac1 Systèmes Informatiques : <br>
+
+                Mise en pratique des concepts théoriques <br>  
+                Les travaux pratiques permettent aux étudiants d'appliquer concrètement les concepts théoriques qu'ils ont appris en classe. 
+                Cela renforce leur compréhension et leur permet de mieux assimiler les connaissances. <br>
+
+                Acquisition d'expérience pratique <br>
+                En travaillant sur des projets réels, les étudiants acquièrent une expérience pratique du développement web. 
+                Cela leur donne une idée concrète de ce à quoi ressemble le processus de création d'un site web, des défis rencontrés 
+                et des solutions apportées. <br>
+
+                Développement de compétences techniques <br>
+                Les travaux pratiques aident les étudiants à développer leurs compétences techniques en utilisant des langages de 
+                programmation web tels que HTML, CSS et JavaScript. Ils apprennent également à utiliser des outils de développement 
+                web et à résoudre des problèmes de codage. <br>
+
+                Encouragement de la créativité <br> 
+                Les travaux pratiques permettent aux étudiants d'exprimer leur créativité en concevant et en développant leurs propres 
+                projets de sites web. Cela stimule leur inventivité et leur permet de créer des réalisations uniques. <br>
+
+                Collaboration et travail d'équipe <br> 
+                Souvent, les travaux pratiques sont réalisés en groupe, ce qui encourage la collaboration et le travail d'équipe. 
+                Les étudiants apprennent à communiquer efficacement, à partager des idées et à résoudre des problèmes ensemble, 
+                des compétences essentielles dans le monde professionnel. <br>
+
+                Rétroaction et amélioration continue <br>
+                Les travaux pratiques sont l'occasion pour les étudiants de recevoir des commentaires constructifs de la part de 
+                leurs enseignants et de leurs pairs. Cela leur permet d'améliorer leur travail et de progresser dans leur apprentissage. <br>
+
+                Préparation pour la vie professionnelle <br> 
+                Les travaux pratiques simulent souvent des situations réelles auxquelles les développeurs web sont confrontés dans leur carrière. 
+                Les étudiants acquièrent ainsi des compétences utiles pour leur future vie professionnelle. <br>
+
+                En somme, les travaux pratiques dans le cours de Web1 offrent aux étudiants des avantages significatifs en termes de mise en 
+                pratique des concepts théoriques, acquisition d'expérience pratique, développement de compétences techniques et collaboration. 
+                Cela les prépare de manière holistique pour leur avenir en tant que développeurs web dans le domaine de l'informatique. <br>
+
+                <h2><em>L'importance des travaux pratiques pour ce cours de Web1</em></h2>
+
+                Le cours de Web1 offre de nombreux avantages aux étudiants en bac1 Systèmes Informatiques. Voici quelques détails sur 
+                ces avantages :
+                <ul>
+                    <li> Apprentissage des bases du développement web</li> 
+                    Le cours de Web1 permet aux étudiants de se familiariser avec les concepts fondamentaux du développement web, 
+                    tels que HTML, CSS et JavaScript. Cela leur donne une solide base pour créer des sites web interactifs et attrayants.
+
+                    <li>Compréhension des principes de conception</li>
+                    Les étudiants apprennent également les principes de conception web, y compris la mise en page, les couleurs et les polices. 
+                    Cette compétence est essentielle pour créer des interfaces utilisateur conviviales et esthétiquement agréables.
+
+                    <li>Développement de compétences pratiques</li> 
+                    Grâce à des projets pratiques, les étudiants acquièrent une expérience concrète dans la création de sites web fonctionnels. 
+                    Cela renforce leur compétence en résolution de problèmes et en développement de logiciels.
+
+                    <li>Adaptation aux tendances actuelles</li> 
+                    Le web évolue rapidement, et le cours de Web1 permet aux étudiants de se tenir au courant des dernières technologies et 
+                    pratiques en matière de développement web.
+
+                    <li>Développement de projets personnels </li>
+                    Les étudiants peuvent exploiter leur créativité en créant leurs propres projets de sites web, ce qui leur permet de 
+                    mettre en pratique ce qu'ils ont appris et d'ajouter des réalisations à leur portfolio.
+
+                    <li>Collaboration et travail d'équipe</li>
+                    Le développement web nécessite souvent une collaboration avec d'autres développeurs et concepteurs. Le cours de Web1 
+                    encourage les étudiants à travailler ensemble sur des projets, améliorant ainsi leurs compétences en communication et 
+                    en travail d'équipe.
+
+                    <li>Préparation pour des cours avancés </li>
+                    Ce cours sert également de base pour des cours de développement web plus avancés, tels que Web2 ou des langages de 
+                    programmation spécifiques pour le web.
+                </ul>
+
+                <p>En résumé, le cours de Web1 offre aux étudiants en bac1 Systèmes Informatiques une opportunité d'acquérir des compétences 
+                pratiques en développement web, de comprendre les principes de conception et de se préparer pour des cours plus avancés. 
+                Cela les prépare à devenir des développeurs web compétents et bien informés dans le domaine de l'informatique.</p>
+
+                
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate obcaecati totam,
+                ratione dolorum eius quod autem facere iusto commodi mollitia, temporibus ipsa est aut adipisci
+                aliquid placeat quibusdam saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                tempora, magnam doloribus minima quia et, aliquid voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloribus, adipisci dolorem ex dicta
+                incidunt expedita repudiandae maiores commodi cupiditate enim atque laudantium aspernatur veniam ad eum soluta facilis obcaecati. commodi sequi alias id inventore praesentium
+                quod voluptates voluptatum ipsum optio accusantium distinctio. <br> Lorem ipsum dolor Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quis quaerat, placeat atque earum animi modi accusamus tenetur
+                exercitationem omnis pariatur consequatur culpa quo ipsam laborum alias natus! Provident, velit quibusdam!
+                sit amet consectetur adipisicing elit. Maxime ipsam temporibus quam ad asperiores. Minus expedita temporibus voluptates ab velit, <br> facere quibusdam, corrupti
+                quod totam repudiandae eum commodi, officiis deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sapiente quam, omnis incidunt ducimus voluptates pariatur, dolorem eos, excepturi explicabo aut molestiae possimus odio
+                iste maxime unde eveniet dolorum enim officiis? Lorem, ipsum dolor sit <br> amet consectetur adipisicing elit. Consectetur mollitia
+                reprehenderit ab praesentium explicabo sit iste velit quidem, numquam assumenda quod dolorem accusamus temporibus tenetur fugiat
+                illo dicta ipsa delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ratione numquam aut,
+                laboriosam corporis dignissimos optio hic amet non sit rem eum illum ipsa molestiae expedita dolores, veniam fugiat blanditiis!
+            </p>
+        </article>
+    </section>
+
+    <!-- Section des membres -->
+    <section class="members-section">
+        <h1>LA LISTE DES TOUS LES MEMBRES DU GROUPE CHACUN AVEC SA PHOTO</h1>
+                <table border="1">
+                        <tr>
+                            <th>Numéro</th>
+                            <th>Nom</th>
+                            <th>Postnom</th>
+                            <th>Prénom</th>
+                            <th>Sexe</th>
+                        </tr>
+                        <!-- Lignes du tableau avec les données -->
+                        <tr>
+                            <td>1</td>
+                            <td>RAMAZANI BIN</td>
+                            <td>MADJALIWA</td>
+                            <td>Fiston</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MWANGA</td>
+                            <td>WANJO</td>
+                            <td>Antoinette</td>
+                            <td>Femme</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MWAVITA</td>
+                            <td>GATABAZI</td>
+                            <td>Claudine</td>
+                            <td>Femme</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>NABINTU</td>
+                            <td>TUSSI</td>
+                            <td>Love</td>
+                            <td>Femme</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>NDAANE</td>
+                            <td>MUTAKA</td>
+                            <td>Chris</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>NDOOLE</td>
+                            <td>MASIRIKA</td>
+                            <td>Victorine</td>
+                            <td>Femme</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>OKAKO</td>
+                            <td>KABEMBA</td>
+                            <td>Esther</td>
+                            <td>Femme</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>OPUA</td>
+                            <td>AWIZUKU</td>
+                            <td>Jean</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>OYINGA</td>
+                            <td>KITESA</td>
+                            <td>Abdoul</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>PALUKU</td>
+                            <td>MALIK</td>
+                            <td>Jérémie</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>NZANZU</td>
+                            <td>MATHE</td>
+                            <td>Simon</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>NDOOLE</td>
+                            <td>NDABIHA</td>
+                            <td>Destin</td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>ODRY</td>
+                            <td>KAJIBWA</td>
+                            <td></td>
+                            <td>Homme</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>ONSIMA</td>
+                            <td>KOKO</td>
+                            <td>Grâce</td>
+                            <td>Femme</td>
+                        </tr>
+                        <!-- Ajoutez les autres lignes ici -->
+                        <tr>
+                            <td>15</td>
+                            <td>NGASHANI</td>
+                            <td>KASALEMBA</td>
+                            <td>Lucien</td>
+                            <td>Homme</td>
+                        </tr>
+                </table>
+
+        <div class="members-container">
+            <div class="container">
+                <img src="./IMG/fils.jpg" alt="fiston madjaliwa" width="300" height="400">
+                <div class="text-overlay">RAMAZANI BIN MADJALIWA Fiston</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/mwanga_wanjo_antoinette.jpg" alt="MWANGA WANJO Antoinette" width="300" height="400">
+                <div class="text-overlay">MWANGA WANJO Antoinette</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/mwavita_gatabazi_claudine.jpg" alt="MWAVITA GATABAZI Claudine" width="300" height="400">
+                <div class="text-overlay">MWAVITA GATABAZI Claudine</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/nabintu_tussi_love.jpg" alt="NABINTU TUSSI Love" width="300" height="400">
+                <div class="text-overlay">NABINTU TUSSI Love</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/ndaane_mutaka_chris.jpg" alt="NDAANE MUTAKA Chris" width="300" height="400">
+                <div class="text-overlay">NDAANE MUTAKA Chris</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/ndoole_masirika_victorine.jpg" alt="ndoole_masirika_victorine" width="300" height="400">
+                <div class="text-overlay">NDOOLE MASIRIKA Victorine</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/okako_kabemba_esther.jpg" alt="okako_kabemba_esther" width="300" height="400">
+                <div class="text-overlay">OKAKO KABEMBA Esther</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/opua_awuziku_jean.jpg" alt="opua_awuziku_jean" width="300" height="400">
+                <div class="text-overlay">OPUA AWIZUKU Jean</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/oyinga_kitesa_abdoul.jpg" alt="oyinga_kitesa_abdoul" width="300" height="400">
+                <div class="text-overlay">OYINGA KITESA Abdoul</div>
+            </div>
+
+            <div class="container">
+                <img src="./IMG/paluku_malik_jeremie.jpg" alt="paluku_malik_jeremie" width="300" height="400">
+                <div class="text-overlay">PALUKU MALIK Jérémie</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>Adresse : 123, Le Volcan, Goma, République Démocratique du Congo</p>
+            <p>Téléphone : +243 973 900 115</p>
+            <p>Email : <a href="mailto:martinshabani7@gmail.com">martinshabani7@gmail.com</a></p>
+        </div>
+        <div>
+            <p>© 2023 Equity Banque. Tous droits réservés.</p>
+            <p><a href="politique-confidentialite.html">Politique de confidentialité</a> | <a href="mentions-legales.html">Mentions légales</a></p>
+        </div>
+    </footer>
+</body>
+</html>
