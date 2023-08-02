@@ -1,0 +1,286 @@
+
+header{
+    background-color: #9bf6f8;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+.contact:hover{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.partenaire:hover{
+    border-bottom: 5px solid blue;
+    background-color: brown;
+}
+
+.alboum:hover{
+    border-bottom: 5px solid blue;
+    background-color: brown;
+}
+
+.accueil:hover{
+    border-bottom: 5px solid blue;
+    background-color: brown;
+}
+
+.web{
+    display: table;
+    margin: 0 auto;
+}
+
+.container
+{
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay
+{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: aqua;
+    color: blueviolet;
+    border: solid 1 black;
+}
+
+.partner-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #9bf6f8;
+}
+
+.partner-logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits ul {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+body
+{
+    background-color: beige;
+}
+
+.fomulaire
+{
+    text-align: center;
+}
+
+.formulaireok{
+    border-radius: 8px 2px 3px black;
+    text-align: left;
+    width: 30%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    left: 50px;
+    border: 2px solid black;
+    margin-left: 20rem;
+    box-shadow: -3px 0px 8px black;
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.partner-logo{
+    width: 200px;
+    height: 150px;
+}
+
+.bloc_partenaire{
+    border: 2px solid rgb(235, 231, 231);
+    margin-left: 10rem;
+    border-radius: 8px 2px 3px black;
+    text-align: left;
+    width: 30%;
+}
+
+.importance_banque{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: slategray;
+    text-align: justify;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    font-size: 2rem;
+    color: #444;
+    text-align: center;
+    padding:0 1rem;
+    padding-top: 6rem;
+    letter-spacing: .1rem;
+    font-weight: 250;
+    }
+
+    
+.teacher{
+background:#f9f9f9;
+}
+
+.teacher .card-container{
+display: flex;
+align-items: center;
+justify-content: left;
+flex-wrap: wrap;
+padding:2rem 0;
+}
+
+.teacher .card-container .card{
+padding:1rem;
+margin: 1rem;
+background:#fff;
+text-align: center;
+width:20rem;
+box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.teacher .card-container .card img{
+height:20rem;
+width:100%;
+object-fit: cover;
+transition: .2s;
+}
+
+.teacher .card-container .card p{
+font-size: 1rem;
+font-family: Arial, Helvetica, sans-serif;
+color:#666;
+}
+
+.teacher .card-container .card .icons a{
+font-size: 1rem;
+padding:1.5rem .5rem;
+color:var(--pink);
+}
+
+.teacher .card-container .card .icons a:hover{
+color:var(--violet);
+}
+
+.importancebanque li {
+    list-style-type: circle;
+    padding-left: 0;
+}
+
+.button{
+   
+}
